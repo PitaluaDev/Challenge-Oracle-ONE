@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador de Mensajes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- animate css cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" type="image/png" href="icon.png">
+
+</head>
+<body id="particles-js">
+  <h1 class="titulo animate__heartBeat">Código secreto</h1>
+
+  <main class="main">
+    <section class="form box">
+      
+        <h2 class="caja1 animate__heartBeat">Solo letras minúsculas, sin acento</h2>
+        <input autocomplete="off" class="text-input" type="text" name="input-texto" placeholder="Ingrese el texto aqui"  id="input-encriptar" rows="3" onkeypress="return soloLetras(event);" onKeyUP="this.value=this.value.toLowerCase();" required>
+        <input class="btn-1" type="submit" value="encriptar!" id="btnEncriptar">
+        <input class="btn-2" type="submit" value="desencriptar!" id="btn-desencriptar">
+      
+    </section>
+  
+    <section class="msg box">
+      <h2 id="" class="caja1 animate__heartBeat">Mensaje encriptado:</h2>
+      <input class="text-input" type="text" id="text-copy"></input>
+      <button id="copiar" class="btnCopy">Copiar</button>
+            
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

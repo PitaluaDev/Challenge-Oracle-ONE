@@ -1,0 +1,159 @@
+/*++ compatibilidad con los padding ++*/
+html {
+    box-sizing: border-box;
+    font-size: 85%; /*  10px = 1rem! */
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+
+
+ body {
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}  
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+
+@media (max-width: 768px){
+    .main{
+        display: inline-block;
+        width: 95%;        
+        margin: auto;
+}
+    
+}
+
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+@media (max-width: 768px){
+    .titulo{
+        
+  padding: 10px;
+  width: 100vw;
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 0px;
+  color: white;
+}
+    
+}
+
+.box {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0.5em;
+  width: 30vw;
+  height: auto;
+  box-shadow: 10px 5px 5px black;
+  text-align: left;
+}
+
+.box h2{
+  text-align: center;
+}
+
+@media (max-width: 768px){
+    .box{
+        padding: 5px;     
+        width: 93vw;
+        margin: 20px 10px 0 10px;
+}
+    
+}
+
+
+
+.btn-1 {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: #5433FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.btn-1:hover{
+  font-size: 22px;
+  transition: all 0.1s linear;
+  
+}
+
+.btn-2 {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); 
+  float: right;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+}
+.btn-2:hover{
+  font-size: 22px;
+  transition: all 0.1s linear;
+  
+}
+
+.btnCopy {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background: #ffe259;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffa751, #ffe259);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffa751, #ffe259); 
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  cursor: pointer;
+
+}
+
+.btnCopy:hover{
+  font-size: 22px;
+  transition: all 0.1s linear;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 90px;
+  box-shadow: 10px 5px 5px black;
+
+
+}
