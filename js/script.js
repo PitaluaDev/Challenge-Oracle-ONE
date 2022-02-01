@@ -49,7 +49,7 @@ No se permite acentuación de palabras
  	  //Funcion para encriptar y desencriptar
  	  const  encriptar = () =>  {
  	  	if (document.getElementById("input-encriptar").value == '') {
-				 	 	 alert("Debe de Ingresar aluna cadena de texto para cifrar");
+				 	 	 alert("Debe de Ingresar alguna cadena de texto para cifrar");
 				 	 	 location.reload();						 				
 						   
 				 	 	 
